@@ -2,7 +2,6 @@ package guru.springframework.sfgpetclinic.bootstrap;
 
 import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Vet;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import guru.springframework.sfgpetclinic.services.OwnerService;
@@ -24,14 +23,14 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setId(1L);
         owner1.setFirstName("Michael");
-        owner1.setLastname("Weston");
+        owner1.setLastName("Weston");
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setId(2L);
         owner2.setFirstName("Fiona");
-        owner2.setLastname("Glenanne");
+        owner2.setLastName("Glenanne");
 
         ownerService.save(owner2);
 
@@ -40,14 +39,14 @@ public class DataLoader implements CommandLineRunner {
         Vet vet1= new Vet();
         vet1.setId(1L);
         vet1.setFirstName("Sam");
-        vet1.setLastname("Axe");
+        vet1.setLastName("Axe");
 
         vetService.save(vet1);
 
         Vet vet2= new Vet();
         vet2.setId(2L);
         vet2.setFirstName("Samuel");
-        vet2.setLastname("Jackson");
+        vet2.setLastName("Jackson");
 
         vetService.save(vet2);
 
